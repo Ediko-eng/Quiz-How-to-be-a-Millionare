@@ -41,7 +41,7 @@ To show you how the game looks, here are small screenshots of the main interface
 You only need the PyQt6 library to run this game:
 ```bash
 pip install PyQt6
-
+```
 ## ⚖️ License
 This project is licensed under the MIT License. 
 For the full legal text, please visit: [Official License Link](https://github.com/Ediko-eng/Quiz-How-to-be-a-Millionare/blob/main/LICENSE)
