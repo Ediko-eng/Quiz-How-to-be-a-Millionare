@@ -1,41 +1,43 @@
-# 💰 Quiz Game: How to Be a Millionaire (Tetum Edition)
+# 💰 Quiz Game: See Mak Sai Milionáriu?
 
-*A high-stakes, interactive trivia application built with Python and PyQt6, featuring lifelines, difficulty scaling, and a dark-mode "Fusion" interface.*
+*A high-stakes, interactive trivia application built with Python and PyQt6, featuring lifelines, difficulty scaling, and a localized Tetum interface.*
 
 ---
 
 ## 📖 Description
-Inspired by the world-famous game show, this application challenges users to answer increasingly difficult questions to reach the $1,000,000 prize. The project demonstrates advanced **GUI development**, **Signal-Slot communication**, and **Game Logic separation** in Python. 
+Inspired by the world-famous game show "Who Wants to Be a Millionaire", this application challenges users to answer 15 increasingly difficult questions to reach the $1,000,000 prize. 
 
-The game is fully localized in **Tetum**, making it an engaging educational tool for the Timorese community.
+The project demonstrates advanced **GUI development** using PyQt6, focusing on **event-driven programming** (Signals and Slots) and a clean separation between the game's visual interface and its underlying logic. All questions and feedback messages are written in **Tetum**.
 
 ## 🚀 Key Features
-* **Dynamic Difficulty:** Questions are categorized into Easy, Normal, and Hard levels, with the prize money increasing at each stage.
-* **Classic Lifelines:**
-  * **50-50:** Automatically removes two incorrect options.
-  * **Husu Audiensia (Ask the Audience):** Simulates audience feedback with high-confidence suggestions.
-  * **Telefoni Kolega (Phone a Friend):** Get a "call" from a friend to help with the answer.
-* **Timed Gameplay:** A 30-second countdown timer adds pressure to every question.
-* **Responsive "Fusion" UI:** A sleek, dark-gradient interface optimized for laptop screens with real-time feedback animations.
-* **Automated Money Progression:** Tracks winnings from $100 up to the $1 Million milestone.
+* **Progressive Difficulty:** Questions transition from Easy to Hard as the player advances.
+* **Classic Lifelines (Ajuda):** Includes 50-50, Husu Audiensia, and Telefoni Kolega (each usable once).
+* **Game Timer:** Integrated `QTimer` that gives players 30 seconds per question.
+* **Dynamic Styling:** Uses a dark-mode "Fusion" style with gold accents for a premium game-show feel.
+
+## 🖼️ Application Interface
+
+To show you how the game looks, here are small screenshots of the main interface:
+
+<p align="center">
+  <img src="Image1.png" alt="Quiz Game Interface 1" width="350" style="margin-right: 20px;" />
+  <img src="Image2.png" alt="Quiz Game Interface 2" width="350" />
+</p>
+<p align="center"><em>Figure 1: Visual layout of the question screen and options.</em></p>
 
 ## 🛠️ Tech Stack
 * **Language:** Python 3.11+
-* **Framework:** PyQt6 (GUI)
-* **Logic:** Object-Oriented Programming (OOP)
-* **Styling:** QSS (Qt Style Sheets) with Linear Gradients
+* **Framework:** PyQt6
+* **Architecture:** Modular Python (UI vs. Logic vs. Data)
 
 ## 📁 Repository Structure
-* **`main_app.py`**: The entry point that initializes the PyQt6 application.
-* **`main_window.py`**: Manages the UI layouts, buttons, timer displays, and screen switching (StackedWidgets).
-* **`quiz_logic.py`**: The "Brain" of the game. Handles score tracking, timer logic, and lifeline calculations.
-* **`questions.py`**: The database containing the trivia questions and the money progression table.
+* **`main_window.py`**: The **Entry Point** and UI Manager. Contains the `MainWindow` class and layouts.
+* **`quiz_logic.py`**: The "Brain" of the game. Handles the timer, lifeline calculations, and score tracking.
+* **`questions.py`**: The database containing the question sets and the money progression table ($100 to $1,000,000).
 
 ## ⚙️ Installation & Usage
 
-### 1. Prerequisites
-Ensure you have Python installed on your system.
-
-### 2. Install Dependencies
+### 1. Install Dependencies
+You only need the PyQt6 library to run this game:
 ```bash
 pip install PyQt6
