@@ -20,7 +20,7 @@ The project demonstrates advanced **GUI development** using PyQt6, focusing on *
 To show you how the game looks, here are small screenshots of the main interface:
 
 <p align="center">
-  <img src="Image1.png" alt="Quiz Game Interface 1" width="350" style="margin-right: 20px;" />
+  <img src="Image1.png" alt="Quiz Game Interface 1" width="350" style="margin-right: 10px;" />
   <img src="Image2.png" alt="Quiz Game Interface 2" width="350" />
 </p>
 <p align="center"><em>Figure 1: Visual layout of the question screen and options.</em></p>
